@@ -21,6 +21,7 @@ services:
       mode: global
   cadvisor:
     image: gcr.io/cadvisor/cadvisor
+    privileged: true
     volumes:
       - /:/rootfs:ro
       - /var/run:/var/run:rw
